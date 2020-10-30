@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/viewTextSearchPostHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comment or Tag User"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <EditText
+        android:id="@+id/comment_box"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_below="@+id/login_header"
+        android:layout_marginBottom="5dp"
+        android:focusable="true"
+        android:hint="Text to comment or tag user"
+        android:maxLines="3"
+        android:textColorHighlight="#ffff"
+        android:textColorHint="#494747"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/comment_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Make Comment"
+        android:textSize="20sp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tag_field"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Tag users"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/tag_edit_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="124dp"-->
+<!--        android:layout_below="@+id/login_header"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:focusable="true"-->
+<!--        android:hint="Username to tag"-->
+<!--        android:maxLines="3"-->
+<!--        android:textColorHighlight="#ffff"-->
+<!--        android:textColorHint="#494747"-->
+<!--        android:textSize="20sp" />-->
+
+    <Button
+        android:id="@+id/tag_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Tag Users"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/voting_buttons"
+        android:layout_below="@id/tag_button"
+        android:gravity="top"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/upvote_button"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:text="Upvote"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/downvote_button"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:text="Downvote"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/viewRecyclerPost3"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

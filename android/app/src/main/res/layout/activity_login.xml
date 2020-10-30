@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp">
+
+        <TextView
+            android:id="@+id/login_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/LOGIN_login_header" />
+
+        <EditText
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/username_field"
+            android:hint = "@string/LOGIN_username_field_prompt"
+            android:focusable = "true"
+            android:textColorHighlight = "#ffff"
+            android:textColorHint = "#494747"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/login_header"
+            android:textSize="20sp"
+            android:maxLines="1"/>
+
+        <EditText
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/password_field"
+            android:hint = "@string/LOGIN_password_field_prompt"
+            android:focusable = "true"
+            android:textColorHighlight = "#ffff"
+            android:textColorHint = "#494747"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/username_field"
+            android:textSize="20sp"
+            android:inputType="textPassword"
+            android:maxLines="1"/>
+
+
+
+        <TextView
+            android:layout_below="@+id/password_field"
+            android:id="@+id/login_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Incorrect username or password"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:textColor="#F00"
+            android:visibility="invisible"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/login_message">
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_height="70dp"
+                android:layout_width="135dp"
+                android:text="@string/LOGIN_login_button_text"
+                android:layout_marginEnd="40dp"
+                android:textSize="20sp"/>
+
+
+            <Button
+                android:id="@+id/create_button"
+                android:layout_height="70dp"
+                android:layout_width="135dp"
+                android:layout_toEndOf="@id/login_button"
+                android:text="@string/LOGIN_create_button_text"
+                android:textSize="20sp"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

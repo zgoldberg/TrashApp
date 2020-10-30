@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminStatsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp">
+
+        <!--Header-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FILLER"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:orientation="vertical"
+            android:gravity="top"
+            android:id="@+id/admin_picture_space_stats">
+
+            <TextView
+                android:id="@+id/admin_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="General Info"
+                android:textColor="#000"
+                android:textSize="40dp"/>
+
+            <ImageView
+                android:id="@+id/admin_picture"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/recycle"
+                android:layout_toEndOf="@+id/admin_label"
+                android:layout_marginStart="30dp"
+                />
+
+        </RelativeLayout>
+
+
+        <!--  Tallies Labels -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/astats_1_label_space"
+            android:layout_below="@id/admin_picture_space_stats"
+            android:gravity="top"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Users"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Posts"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Comments"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <!--       Tallies Values -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/astats_1_value_space"
+            android:layout_below="@id/astats_1_label_space"
+            android:gravity="top">
+
+            <TextView
+                android:id="@+id/total_users_stats"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:id="@+id/total_posts_stats"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/total_comments_stats"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <!--       Ratios Labels -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/astats_2_label_space"
+            android:layout_below="@id/astats_1_value_space"
+            android:gravity="top">
+
+            <TextView
+                android:id="@+id/posts_per_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posts per User"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/comments_per_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comments per Post"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/tags_per_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tags per Post"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <!--     Ratios Values -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/astats_2_value_space"
+            android:layout_below="@id/astats_2_label_space"
+            android:gravity="top">
+
+            <TextView
+                android:id="@+id/ppu_stats"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/cpp_stats"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/tpp_stats"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <!--       Votes labels  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/astats_3_label_space"
+            android:layout_below="@id/astats_2_value_space"
+            android:gravity="top">
+
+            <TextView
+                android:id="@+id/a_upvotes_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Up Votes"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:id="@+id/a_downvotes_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Down Votes"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/uvp_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upvote Percentage"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <!--       Votes numbers  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/astats_3_value_space"
+            android:layout_below="@id/astats_3_label_space"
+            android:gravity="top">
+
+            <TextView
+                android:id="@+id/a_upvotes"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:id="@+id/a_downvotes"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/uvp"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <!--    Leaderboard Title-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FILLER"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:orientation="vertical"
+            android:gravity="top"
+            android:layout_below="@id/astats_3_value_space"
+            android:id="@+id/leaderboard_title">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leaderboard"
+                android:textColor="#000"
+                android:textSize="40dp"/>
+
+        </RelativeLayout>
+
+        <!--     Leaderboard Totals Labels  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lead_1_label"
+            android:layout_below="@id/leaderboard_title"
+            android:gravity="top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most Posts"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most Times Tagged"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+
+        <!--       Leaderboard Totals Values  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lead_1_value"
+            android:layout_below="@id/lead_1_label"
+            android:gravity="top">
+
+            <TextView
+                android:id="@+id/lead_posts"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:id="@+id/lead_tags"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+
+        <!--     Leaderboard Percents Labels  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lead_2_label"
+            android:layout_below="@id/lead_1_value"
+            android:gravity="top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Highest Upvote %"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lowest Upvote %"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+
+        <!--       Leaderboard Percents Values  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lead_2_value"
+            android:layout_below="@id/lead_2_label"
+            android:gravity="top">
+
+            <TextView
+                android:id="@+id/lead_uvp_high"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:id="@+id/lead_uvp_low"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--</LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

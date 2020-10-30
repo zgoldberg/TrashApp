@@ -1,0 +1,41 @@
+<resources>
+
+    <string name="app_name">Final Project CIS 350</string>
+
+
+    <!--Strings for LoginActivity-->
+    <string name="LOGIN_login_header">App logo here</string>
+    <string name="LOGIN_username_field_prompt">Enter username</string>
+    <string name="LOGIN_password_field_prompt">Enter password</string>
+    <string name="LOGIN_login_button_text">Login</string>
+    <string name="LOGIN_create_button_text">Create account</string>
+    <string name="LOGIN_incorrect_message">Incorrect username or password</string>
+    <!---->
+
+    <!--Strings for CreateAccount-->
+    <string name="CREATEACCOUNT_username_hint">Username</string>
+    <string name="CREATEACCOUNT_full_name_hint">Full name</string>
+    <string name="CREATEACCOUNT_password_hint">Password</string>
+    <string name="CREATEACCOUNT_reenter_password_hint">Re-enter password</string>
+    <string name="CREATEACCOUNT_zipcode_hint">Zip code</string>
+    <string name="CREATEACCOUNT_button_text">Create account</string>
+    <string name="CREATEACCOUNT_missing_message">Required field empty</string>
+    <string name="CREATEACCOUNT_matching_message">Passwords do not match</string>
+    <string name="CREATEACCOUNT_username_message">That username is taken</string>
+    <string name="CREATEACCOUNT_zip_message">Invalid zip code</string>
+    <string name="CREATEACCOUNT_database_message">Could not add new user to database</string>
+    <!---->
+
+    <!--Strings for ViewAccount-->
+    <string name="VIEWACCOUNT_username">Username</string>
+    <string name="VIEWACCOUNT_karma">Karma</string>
+    <string name="VIEWACCOUNT_followers">Followers</string>
+    <string name="VIEWACCOUNT_following">Following</string>
+    <string name="VIEWACCOUNT_edit_account">Edit Account</string>
+    <string name="VIEWACCOUNT_view_posts">View Posts</string>
+    <!---->
+    <!--Strings for CreatePOST-->
+    <string name="CREATEPOST_button_text">POST</string>
+    <string name="CREATEPOST_txt">Post Text</string>
+    <string name="api_key">AIzaSyAw4o7KJ9LIFrooS5qU7nuZkqcGdycUwxE</string>
+</resources>

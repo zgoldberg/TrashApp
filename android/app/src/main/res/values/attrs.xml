@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="tag">
+        <attr name = "username" format = "string" />
+    </declare-styleable>
+</resources>

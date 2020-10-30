@@ -1,0 +1,10 @@
+{
+	"id": "id_post_6"
+	"user_posted": "CABEL ACKO",
+	"image": "id_image_4",
+	"time": "2020-03-24T19:26:50+0000",
+	"karma": -420,
+	"location": 19135,
+	"user_tagged": ["JOHN DOE", "JANE DOE"],
+	"comments": ["id_comment_13", "id_comment_6"]
+}

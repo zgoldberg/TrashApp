@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/viewTextFeedHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Feed"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+    <Button
+        android:id="@+id/viewButtonFeedRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickSearch"
+        android:text="Refresh"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/viewRecyclerFeed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

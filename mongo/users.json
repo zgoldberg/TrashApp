@@ -1,0 +1,4 @@
+{"_id":{"$oid":"5e97348c13d99e57fc4cbcff"},"username":"admin","zipcode":{"$numberInt":"11111"},"password":"admin","fullname":"admin","admin":{"$numberInt":"0"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5e974caf8076411e14f6a2ae"},"username":"aa","zipcode":"19210","password":"qq","fullname":"xx","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5e974d468076411e14f6a2b1"},"username":"ff","zipcode":{"$numberInt":"11111"},"password":"ff","fullname":"ff","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5e9757833e4bf62bc40fb3c7"},"username":"kk","zipcode":{"$numberInt":"19115"},"password":"jj","fullname":"ff","__v":{"$numberInt":"0"}}

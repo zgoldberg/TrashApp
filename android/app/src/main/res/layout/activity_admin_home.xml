@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/login_message">
+
+        <Button
+            android:id="@+id/userButton"
+            android:layout_height="70dp"
+            android:layout_width="135dp"
+            android:text="User"
+            android:layout_marginEnd="40dp"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/post_button"
+            android:layout_width="135dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="80dp"
+            android:text="Make Post"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/search_post_button"
+            android:layout_width="135dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="200dp"
+            android:text="Search for Posts"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/dark"
+            android:layout_width="135dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="530dp"
+            android:text="dark"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/mapp"
+            android:layout_width="135dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="280dp"
+            android:text="Map"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/ban"
+            android:layout_width="135dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="360dp"
+            android:text="BAN USER"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/admin_stats"
+            android:layout_width="135dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="445dp"
+            android:text="ADMIN STATISTICS"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

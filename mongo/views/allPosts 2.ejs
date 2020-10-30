@@ -1,0 +1,12 @@
+Here are all the posts:
+<ul>
+<% posts.forEach( (post) => { %>
+
+<li><%= post.username %>: <%= post.zipcode %>:<%= post.text %>:  :<%= post._id %>:</li>
+
+<% }); %>
+</ul>
+
+<br><a href="/remove">Remove Posts</a>
+<br><a href="/">Dashboard</a>
+

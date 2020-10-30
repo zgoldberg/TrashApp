@@ -1,0 +1,11 @@
+Here are all the people:
+<ul>
+<% users.forEach( (user) => { %>
+
+<li><%= user.username %>: <%= user.zipcode %></li>
+
+<% }); %>
+</ul>
+
+<br><a href="/">Create New Person</a>
+<br><a href="/">Dashboard</a>

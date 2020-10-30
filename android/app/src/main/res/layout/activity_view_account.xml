@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewAccountActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp">
+
+<!--        /username and picture-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FILLER"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:orientation="vertical"
+            android:gravity="top"
+            android:id="@+id/username_picture_space">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USERNAME"
+                android:textColor="#000"
+                android:textSize="40dp"/>
+
+            <ImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/profile"
+                android:layout_toEndOf="@+id/username"
+                android:layout_marginStart="30dp"
+                />
+
+        </RelativeLayout>
+
+<!--        Followers, following, karma labels-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stats_space"
+            android:layout_below="@id/username_picture_space"
+            android:gravity="top"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/VIEWACCOUNT_karma"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/VIEWACCOUNT_followers"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/VIEWACCOUNT_following"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+<!--        Followers, following, karma numbers-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stats_lable_space"
+            android:layout_below="@id/stats_space"
+            android:gravity="top">
+
+            <TextView
+                android:id="@+id/karma"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:id="@+id/followers"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/following"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/edit_account_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stats_lable_space"
+            android:text="@string/VIEWACCOUNT_edit_account"/>
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/see_posts_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_account_button"
+            android:text="@string/VIEWACCOUNT_view_posts"/>
+
+        <Button
+            android:layout_marginTop="55dp"
+            android:id="@+id/view_stats_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_account_button"
+            android:text="View Statistics"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
